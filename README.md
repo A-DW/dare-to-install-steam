@@ -67,11 +67,10 @@ dare-to-install-steam/
 ├── README.md
 ├── docs/                    # My chronological investigation and explanations
 ├── configs/apparmor/steam    # The exact compatibility profile I used
-├── evidence/
-│   ├── README.md            # Provenance and sanitisation notes
-│   ├── logs/                # Excerpts from the supplied session output
-│   └── screenshots/         # Privacy guidance; no images committed yet
-└── .gitignore
+└── evidence/
+    ├── README.md            # Provenance and sanitisation notes
+    ├── logs/                # Excerpts from the supplied session output
+    └── screenshots/         # Privacy guidance; no images committed yet
 ```
 
 I have not added automated install or cleanup scripts. I have not selected a repository license yet; I do not intend to imply that this repository licenses Steam, games, or third-party documentation.
