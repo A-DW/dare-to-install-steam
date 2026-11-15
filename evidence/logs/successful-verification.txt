@@ -1,0 +1,29 @@
+# Sanitised excerpts from my supplied output, at two different stages.
+
+# Before I created the custom profile:
+$ sudo apparmor_parser -T -r /etc/apparmor.d/steam
+File /etc/apparmor.d/steam not found, skipping...
+
+$ sudo cat /etc/apparmor.d/steam
+cat: /etc/apparmor.d/steam: No such file or directory
+
+$ sudo aa-status | grep -i -C 3 steam
+# No matching output was supplied at this stage.
+
+# After I created and loaded the profile:
+$ sudo apparmor_parser -T -r /etc/apparmor.d/steam
+# No error output was supplied.
+
+$ sudo aa-status | grep -i steam
+   steam
+   /usr/bin/bash (6379) steam
+   /home/USER/.steam/debian-installation/ubuntu12_32/steam-runtime/usr/libexec/steam-runtime-tools-0/srt-logger (6469) steam
+   /home/USER/.steam/debian-installation/ubuntu12_32/steam (6498) steam
+   /usr/bin/dash (6499) steam
+   /home/USER/.steam/debian-installation/ubuntu12_32/steam (6500) steam
+
+$ sysctl kernel.apparmor_restrict_unprivileged_userns
+kernel.apparmor_restrict_unprivileged_userns = 1
+
+# Steam reached the sign-in screen in the session.
+# The original screenshot is not committed here.

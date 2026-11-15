@@ -1,0 +1,12 @@
+# Sanitised excerpt from my supplied session output.
+$ steam
+steam.sh[5114]: Running Steam on ubuntu 24.04 64-bit
+steam.sh[5114]: STEAM_RUNTIME is enabled automatically
+setup.sh[5152]: Steam runtime environment up-to-date!
+steam-runtime-check-requirements[5239]: W: Child process exited with code 1: bwrap: setting up uid map: Permission denied
+
+steam.sh[5114]: Error: Steam now requires user namespaces to be enabled.
+
+This requirement is the same as for Flatpak, which has more detailed
+information available:
+https://github.com/flatpak/flatpak/wiki/User-namespace-requirements

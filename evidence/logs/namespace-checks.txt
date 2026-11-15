@@ -1,0 +1,11 @@
+# Excerpt from my supplied session output.
+$ sysctl kernel.unprivileged_userns_clone user.max_user_namespaces kernel.apparmor_restrict_unprivileged_userns
+kernel.unprivileged_userns_clone = 1
+user.max_user_namespaces = 25255
+kernel.apparmor_restrict_unprivileged_userns = 1
+
+$ unshare --user --map-root-user true
+unshare: write failed /proc/self/uid_map: Operation not permitted
+
+$ sudo unshare --user --map-root-user true
+# No output was supplied for the root diagnostic comparison.

@@ -1,0 +1,13 @@
+# Excerpt from my supplied session output.
+$ command -v steam
+/usr/games/steam
+
+$ dpkg -l | grep -E '^ii[[:space:]]+steam'
+ii  steam-devices           1:1.0.0.79~ds-2  all    Device support for Steam-related hardware
+ii  steam-installer         1:1.0.0.79~ds-2  amd64  Valve's Steam digital software delivery system
+ii  steam-libs:amd64        1:1.0.0.79~ds-2  amd64  Metapackage for Steam dependencies
+ii  steam-libs:i386         1:1.0.0.79~ds-2  i386   Metapackage for Steam dependencies
+ii  steam-libs-i386:i386    1:1.0.0.79~ds-2  i386   Metapackage for 32-bit Steam dependencies
+
+$ snap list steam
+error: no matching snaps installed
