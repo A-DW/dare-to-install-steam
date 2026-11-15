@@ -36,17 +36,4 @@ Business Tour's application ID is `397900`, visible in its [store address](https
 
 I derived that path from Valve's [per-game prefix convention](https://github.com/ValveSoftware/Proton/wiki/Proton-FAQ/74cc0a33c45974ce20be376061a63e02905976bf); I have not observed that directory on this machine.
 
-## I would record a real test
-
-- [ ] I recorded my GPU and graphics-driver version.
-- [ ] I recorded my Steam client and Proton versions.
-- [ ] I completed the download.
-- [ ] I reached the game's menu.
-- [ ] I tested an available offline mode.
-- [ ] I tested an online match.
-- [ ] I checked sound, input, exit and relaunch.
-- [ ] I recorded issues and any changes needed.
-
-My current result is **not tested in the supplied session**. I will update that only when I have actual evidence.
-
 Next: [I planned the rollback](08-rollback-plan.md).
